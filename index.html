@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Meu Calendari JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar-app">
+    <header class="calendar-header">
+      <button id="prev-btn">&lt;</button>
+      <h2 id="month-year-display">-- ----</h2>
+      <button id="next-btn">&gt;</button>
+    </header>
+
+    <div class="weekdays">
+      <div>Dl</div><div>Dm</div><div>Dc</div><div>Dj</div><div>Dv</div><div>Ds</div><div>Dg</div>
+    </div>
+
+    <div id="days-grid" class="days-grid"></div>
+
+    <section class="events-section">
+      <h3 id="selected-date-display">Selecciona un dia</h3>
+      <form id="event-form">
+        <input type="text" id="event-input" placeholder="Nou esdeveniment..." required>
+        <button type="submit">Afegir</button>
+      </form>
+
+      <ul id="events-list"></ul>
+
+      <div class="actions">
+        <button id="notify-btn" class="secondary-btn">Activar Notificacions</button>
+        <button id="share-btn" class="secondary-btn">Compartir Dia</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
